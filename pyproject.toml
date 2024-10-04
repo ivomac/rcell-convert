@@ -1,0 +1,41 @@
+
+[project]
+name = "rcell_convert"
+dynamic = ["version"]
+readme = "README.md"
+dependencies = [
+]
+
+[project.scripts]
+qpc = "qpc.__main__:main"
+
+plot_stimulus = "nwb.scripts.plot_stimulus:main"
+fill_icportal_stimulus = "nwb.scripts.fill_icportal_stimulus:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
+
+[tool.setuptools.package-data]
+nwb = ["*src/styles/*.mplstyle"]
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "D", "I", "N", "S", "T", "UP", "B", "SIM", "R"]
+ignore = ["B019"]
+
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+

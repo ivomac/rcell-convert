@@ -1,0 +1,4 @@
+# set monospace font
+
+font.family: monospace
+font.monospace: Fira Code, Fira Mono, JetBrains Mono, Hack, Source Code Pro, Monaco, Courier New, DejaVu Sans Mono, Ubuntu Mono, Consolas, Inconsolata, IBM Plex Mono, Droid Sans Mono, Menlo, Lucida Console, PragmataPro, monospace
