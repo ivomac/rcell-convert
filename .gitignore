@@ -1,0 +1,6 @@
+/data
+*.dat
+*.nwb
+tmp*
+__pycache__/
+.env
